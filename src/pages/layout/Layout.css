@@ -1,0 +1,7 @@
+.layout-container {
+  height: 100vh;
+  .main-container {
+    height: 100%;
+    margin-top: 3%;
+  }
+}
