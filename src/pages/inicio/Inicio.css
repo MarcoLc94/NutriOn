@@ -1,5 +1,7 @@
+
 .inicio-container {
-  background-color: gray;
+  margin-top: 5%;
+  padding: 10px;
   height: 100%;
   background-image: url("/background.jpeg"); /* Corregido a url() */
   background-size: cover; /* Para cubrir todo el contenedor */
@@ -8,13 +10,31 @@
   background-attachment: fixed; /* Opcional: efecto parallax */
 }
 
-.canvas-container {
-  width: 100%;
-  height: 100%;
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  color: #3BAE54;
+  font-family: Signika;
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px green;
+  letter-spacing: 5px;
 }
 
-/* Opcional: estilo para el panel de control GUI */
-.lil-gui {
-  --width: 300px;
-  --font-size: 14px;
+.slogan{
+  display: flex;
+  justify-content: center;
+  color: rgba(246, 246, 246, 0.652);
+  text-shadow:2px 2px 2px black;
+  font-weight: 600;
+  font-size: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.button-div{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }

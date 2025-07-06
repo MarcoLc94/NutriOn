@@ -1,0 +1,110 @@
+/* Estilos base del botón */
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Variantes de color */
+  .button--primary {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .button--primary:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .button--secondary {
+    background-color: #e5e7eb;
+    color: #1f2937;
+  }
+  
+  .button--secondary:hover {
+    background-color: #d1d5db;
+  }
+  
+  .button--danger {
+    background-color: #dc2626;
+    color: white;
+  }
+  
+  .button--danger:hover {
+    background-color: #b91c1c;
+  }
+
+  .button--success {
+    background-color: #26dc3b;
+    color: white;
+  }
+
+  .button--success:hover {
+    background-color: #1b9f2a;
+    color: white;
+  }
+  
+  .button--ghost {
+    background-color: transparent;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+  
+  .button--ghost:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Sombras */
+  .button--shadow-none {
+    box-shadow: none;
+  }
+  
+  .button--shadow-small {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button--shadow-medium {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button--shadow-large {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Bordes redondeados */
+  .button--rounded-none {
+    border-radius: 0;
+  }
+  
+  .button--rounded-small {
+    border-radius: 0.25rem;
+  }
+  
+  .button--rounded-medium {
+    border-radius: 0.5rem;
+  }
+  
+  .button--rounded-large {
+    border-radius: 1rem;
+  }
+  
+  .button--rounded-full {
+    border-radius: 9999px;
+  }
+  
+  /* Ancho completo */
+  .button--full-width {
+    width: 100%;
+  }
+  
+  /* Estado focus para accesibilidad */
+  
+  /* Estado disabled */
+  .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
