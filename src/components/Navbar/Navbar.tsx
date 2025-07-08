@@ -107,6 +107,22 @@ const Navbar = () => {
       >
         {mobileMenuOpen ? "✕" : "☰"}
       </div>
+      
+       <button
+      className="theme-toggle"
+      onClick={toggleTheme}
+      aria-label={`Cambiar a modo ${theme === "light" ? "oscuro" : "claro"}`}
+    >
+      <div className={`toggle-track ${theme}`}>
+        <div className="toggle-thumb">
+          {theme === "light" ? (
+            <span className="material-symbols-outlined">light_mode</span>
+          ) : (
+            <span className="material-symbols-outlined">dark_mode</span>
+          )}
+        </div>
+      </div>
+    </button>
     </nav>
   );
 };

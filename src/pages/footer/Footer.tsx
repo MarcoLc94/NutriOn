@@ -40,9 +40,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} NutriOn. Todos los derechos reservados.</p>
         <div className="footer-social">
-          <a href="#" aria-label="Facebook"><span className="material-symbols-outlined">facebook</span></a>
-          <a href="#" aria-label="Instagram"><span className="material-symbols-outlined">instagram</span></a>
-          <a href="#" aria-label="Twitter"><span className="material-symbols-outlined">twitter</span></a>
+          <a href="#" aria-label="Facebook"><span >facebook</span></a>
+          <a href="#" aria-label="Instagram"><span >instagram</span></a>
+          <a href="#" aria-label="Twitter"><span >twitter</span></a>
         </div>
       </div>
     </footer>
