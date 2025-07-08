@@ -1,40 +1,45 @@
 
 .inicio-container {
-  margin-top: 5%;
+  margin-top: 7vh;
   padding: 10px;
-  height: 100%;
-  background-image: url("/background.jpeg"); /* Corregido a url() */
+  height: 70vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3)) , url("/background.jpeg");
   background-size: cover; /* Para cubrir todo el contenedor */
   background-position: center; /* Centrar la imagen */
   background-repeat: no-repeat; /* Evitar repetición */
   background-attachment: fixed; /* Opcional: efecto parallax */
+  
+
+  .title-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+  }
 }
+
+
 
 .title {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
-  color: #3BAE54;
+  color: var(--color-primary);
   font-family: Signika;
   font-weight: 800;
-  font-size: 50px;
-  text-shadow: 2px 2px 2px green;
+  font-size: 10vw;
+  text-shadow: 2px 2px 2px var(--color-primary);
   letter-spacing: 5px;
 }
 
 .slogan{
-  display: flex;
-  justify-content: center;
-  color: rgba(246, 246, 246, 0.652);
-  text-shadow:2px 2px 2px black;
+  color: rgba(22, 22, 22, 0.932);
   font-weight: 600;
-  font-size: 15px;
-  align-items: center;
+  font-size: 25px;
   text-align: center;
 }
 
 .button-div{
-  margin-top: 20px;
   display: flex;
   justify-content: center;
 }

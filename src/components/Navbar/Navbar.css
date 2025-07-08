@@ -7,17 +7,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: rgba(40, 167, 69, 0.9);
+  background-color: var(--color-background);
   backdrop-filter: blur(10px);
-  height: 4%;
+  height: 5vh;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px var(--color-shadow);
+  z-index: 2000;
 }
 
 .navbar.scrolled {
   padding: 0.5rem;
-  background-color: rgba(34, 139, 34, 0.95);
+  background-color: var(--color-primary-bg-select);
+
 }
+
+
 
 .navbar-logo {
   display: flex;
@@ -30,7 +34,7 @@
 
 .navbar-logo a {
   text-decoration: none;
-  color: white;
+  color: var(--color-text);
   font-weight: 700;
   font-size: 2rem;
   display: flex;
@@ -40,6 +44,16 @@
 .logo-text {
   margin-right: 0.5rem;
   font-family: Signika;
+}
+
+.logo-text.scrolled-text {
+  color: var(--color-button-text);
+  font-weight: 700;
+}
+
+.scrolled-text {
+  color: var(--color-button-text);
+  font-weight: 700;
 }
 
 .logo-icon {
@@ -54,7 +68,7 @@
 }
 
 .nav-link {
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -68,7 +82,7 @@
 }
 
 .nav-link:hover {
-  color: #f8f9fa;
+  color: var(--color-primary-hover);
 }
 
 .nav-link::after {
@@ -78,12 +92,32 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color:   var(--color-primary-hover);
   transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+.scrolled-text {
+  color: var(--color-button-text);
+
+}
+
+.nav-link.scrolled-text:hover {
+  color: var(--color-primary-hover);
+}
+
+.nav-link.scrolled-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color:  #c8ca34;
+  transition: width 0.3s ease;
 }
 
 .cta-button {
@@ -106,7 +140,14 @@
 
 .mobile-menu-button {
   display: none;
-  color: white;
+  color: rgba(34, 139, 34, 0.98);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 5vw;
+}
+
+.mobile-menu-button.scrolled-text {
+  color: rgba(245, 245, 245, 0.98);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -115,13 +156,85 @@
   margin-right: 30px;
 }
 
+.theme-toggle {
+  --toggle-width: 60px;
+  --toggle-height: 30px;
+  --thumb-size: 26px;
+  --thumb-padding: 2px;
+  
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toggle-track {
+  position: relative;
+  width: var(--toggle-width);
+  height: var(--toggle-height);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Fondo del track para cada tema */
+.toggle-track.light {
+  background: linear-gradient(to right, #F0F0F0, #E0E0E0);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.toggle-track.dark {
+  background: linear-gradient(to right, #333, #444);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.toggle-thumb {
+  position: absolute;
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Posición del thumb para cada tema */
+.toggle-track.light .toggle-thumb {
+  transform: translateX(var(--thumb-padding));
+  background: #FFFFFF;
+  color: #FFC107; /* Color amarillo para el icono de luna */
+}
+
+.toggle-track.dark .toggle-thumb {
+  transform: translateX(calc(var(--toggle-width) - var(--thumb-size) - var(--thumb-padding)));
+  background: #1E1E1E;
+  color: #FFD54F; /* Color amarillo claro para el icono de sol */
+}
+
+/* Efecto hover */
+.theme-toggle:hover .toggle-track.light {
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.theme-toggle:hover .toggle-track.dark {
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Estilos para los íconos */
+.theme-toggle .material-symbols-outlined {
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .navbar-links {
     position: fixed;
     top: 70px;
     left: -100%;
-    width: 80%;
+    width: 100%;
     height: calc(100vh - 70px);
     background-color: rgba(34, 139, 34, 0.98);
     flex-direction: column;

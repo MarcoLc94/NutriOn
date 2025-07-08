@@ -9,21 +9,34 @@
     display: inline-block;
     text-align: center;
   }
+
+  .button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
   
   /* Variantes de color */
   .button--primary {
-    background-color: #2563eb;
+    background-color: var(--color-primary);
     color: white;
   }
   
   .button--primary:hover {
-    background-color: #1d4ed8;
+    background-color: #05640d;
   }
+
+  .button--primary:active {
+    background-color: #034309; /* 15% más oscuro que el hover */
+}
   
   .button--secondary {
     background-color: #e5e7eb;
     color: #1f2937;
   }
+
+  .button--secondary:active {
+    background-color: #9ca3af; /* 15% más oscuro que el hover */
+}
   
   .button--secondary:hover {
     background-color: #d1d5db;
@@ -38,13 +51,22 @@
     background-color: #b91c1c;
   }
 
+  .button--danger:active {
+    background-color: #991b1b; /* 15% más oscuro que el hover */
+}
+
   .button--success {
-    background-color: #26dc3b;
+    background-color: var(--color-primary);
     color: white;
   }
 
+  .button--success:active {
+    background-color: var(--color-primary); /* Vuelve al color original */
+    filter: brightness(0.9); /* Oscurece un 10% */
+}
+
   .button--success:hover {
-    background-color: #1b9f2a;
+   background-color: color-mix(in srgb, var(--color-primary) 90%, white 10%);
     color: white;
   }
   
@@ -53,6 +75,11 @@
     color: #374151;
     border: 1px solid #d1d5db;
   }
+
+  .button--ghost:active {
+    background-color: #e5e7eb; /* Más oscuro que el hover */
+    border-color: #9ca3af;
+}
   
   .button--ghost:hover {
     background-color: #f3f4f6;
