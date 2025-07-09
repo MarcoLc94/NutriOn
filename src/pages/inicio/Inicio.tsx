@@ -6,8 +6,6 @@ import "./Inicio.css"
 
 const Inicio = () => {
 
- 
-
   return (
     <div className="main-container" id="home">
     <div className="inicio-container" >

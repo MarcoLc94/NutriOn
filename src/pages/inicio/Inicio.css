@@ -1,22 +1,26 @@
 
-.inicio-container {
-  padding: 10px;
-  height: 70vh;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3)), url("./background.jpeg");
-  background-size: cover; /* Para cubrir todo el contenedor */
-  background-position: center; /* Centrar la imagen */
-  background-repeat: no-repeat; /* Evitar repetición */
-  background-attachment: fixed; /* Opcional: efecto parallax */
-  
+.main-contaniner{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3)), url("./background.jpeg");
+    background-size: cover; /* Para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición */
+    background-attachment: fixed; /* Opcional: efecto parallax */
 
-  .title-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 60%;
   }
-}
+  .inicio-container {
+    padding: 10px;
+    height: 70vh;
+
+    
+  
+    .title-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 60%;
+    }
+  }
 
 
 
