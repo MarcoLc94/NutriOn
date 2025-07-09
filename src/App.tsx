@@ -1,5 +1,6 @@
 import Inicio from "./pages/inicio/Inicio";
 import Layout from "./pages/layout/Layout";
+import "./App.css"
 
 import { Routes, Route } from "react-router-dom";
 import Plans from "./pages/plans/Plans";

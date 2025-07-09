@@ -101,14 +101,11 @@ const Navbar = () => {
     </button>
       </div>
 
-      <div
+   <div
         className={`mobile-menu-button ${scrolled ? "scrolled-text" : ""}`}
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
       >
-        {mobileMenuOpen ? "✕" : "☰"}
-      </div>
-      
-       <button
+          <button
       className="theme-toggle"
       onClick={toggleTheme}
       aria-label={`Cambiar a modo ${theme === "light" ? "oscuro" : "claro"}`}
@@ -123,6 +120,15 @@ const Navbar = () => {
         </div>
       </div>
     </button>
+      </div>
+      <div
+        className={`mobile-menu-button ${scrolled ? "scrolled-text" : ""}`}
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      >
+        {mobileMenuOpen ? "✕" : "☰"}
+      </div>
+      
+    
     </nav>
   );
 };
