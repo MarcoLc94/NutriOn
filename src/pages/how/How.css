@@ -1,11 +1,11 @@
-.tip-container {
+.how-container {
   padding: 10px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3)),
     url("./background2.jpeg");
-  background-size: cover; /* Para cubrir todo el contenedor */
-  background-position: center; /* Centrar la imagen */
-  background-repeat: no-repeat; /* Evitar repetición */
-  background-attachment: fixed; /* Opcional: efecto parallax */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,9 +13,8 @@
   min-height: 80vh;
 }
 
-.tip-card {
+.how-card {
   display: flex;
-
   width: 80vw;
   border-radius: 20px;
   overflow: hidden;
@@ -23,14 +22,7 @@
   height: 60vh;
 }
 
-.tips-mini {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-}
-
-.tip-content {
+.how-content {
   flex: 1;
   padding: 2.5rem;
   background: color-mix(in srgb, var(--color-primary) 70%, transparent 50%);
@@ -41,7 +33,7 @@
   justify-content: center;
 }
 
-.tip-tag {
+.how-tag {
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
@@ -50,18 +42,59 @@
   letter-spacing: 1px;
 }
 
-.tip-text {
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.step-number {
+  background-color: white;
+  color: var(--color-primary);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.step-title {
   color: white;
   font-size: 1.1rem;
-  line-height: 1.6;
+  font-weight: 600;
   margin: 0;
 }
 
-.tip-image {
+.step-text {
+  color: white;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.how-image {
   flex: 1;
 }
 
-.tip-img {
+.how-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -70,22 +103,24 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .tip-card {
+  .how-card {
     flex-direction: column;
+    height: auto;
   }
 
-  .tip-content {
+  .how-content {
     order: 2;
   }
 
-  .tip-image {
+  .how-image {
     height: 300px;
   }
-}
 
-body {
-  margin-bottom: 0;
-  min-height: 100vh; /* Asegura que el body ocupe al menos toda la pantalla */
-  display: flex;
-  flex-direction: column; /* Para que el footer se quede abajo */
+  .steps-container {
+    gap: 1.2rem;
+  }
+
+  .step {
+    gap: 0.8rem;
+  }
 }

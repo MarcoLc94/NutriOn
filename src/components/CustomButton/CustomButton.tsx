@@ -2,7 +2,7 @@ import React from "react";
 import "./CustomButton.css"; // Importamos el CSS
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "danger" | "success"|"ghost";
+  variant?: "primary" | "secondary" | "danger" | "success" | "ghost";
   shadowSize?: "none" | "small" | "medium" | "large";
   rounded?: "none" | "small" | "medium" | "large" | "full";
   fullWidth?: boolean;

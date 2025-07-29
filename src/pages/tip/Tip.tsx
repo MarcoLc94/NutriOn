@@ -9,9 +9,14 @@ const Tip = () => {
           <hr />
           <div className="tips-mini">
             <p className="tip-text">
-              NutriOn es nutrición personalizada, Transformamos planes, en
-              comidas listas para comer con ingredientes frescos y todo el sabor
-              que esperas. Lo que tu nutrióloga indique nosotros lo preparamos.
+              NutriOn es un servicio de comida saludable personalizada que
+              trabaja de la mano con nutriólogas. Nos encargamos de preparar y
+              entregar los menús prescritos a cada paciente, ajustándonos a sus
+              necesidades dietéticas (hipocalórica, alta en proteína, keto,
+              vegana, sin gluten, etc.). Ofrecemos paquetes semanales que
+              incluyen todas las comidas necesarias, listas para consumir, con
+              control de porciones, ingredientes frescos y etiquetado
+              profesional.
             </p>
 
             <p className="tip-text">
