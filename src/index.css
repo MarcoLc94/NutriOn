@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   font-family: Inter;
-
 }
 
 :root {
@@ -17,22 +16,22 @@
 [data-theme="light"] {
   /* Colores base */
   --color-background: hsla(0, 0%, 87%, 0.884);
-  --color-text:rgba(34, 139, 34, 0.95); /* Verde oscuro similar a #28A745 */
+  --color-text: rgba(34, 139, 34, 0.95); /* Verde oscuro similar a #28A745 */
   --color-surface: hsl(0, 0%, 98%);
   --color-border: hsl(0, 0%, 85%);
 
   /* Colores primarios (verdes) */
-  --color-primary:rgba(34, 139, 34, 0.95);/* Verde principal */
-  --color-primary-intense: #228B22; /* Verde más intenso */
+  --color-primary: rgba(34, 139, 34, 0.95); /* Verde principal */
+  --color-primary-intense: #228b22; /* Verde más intenso */
   --color-primary-bg: rgba(255, 255, 255, 0);
   --color-primary-bg-select: hsla(134, 61%, 35%, 0.507);
   --color-primary-bg-select-deep: hsla(134, 61%, 35%, 0.247);
   --color-primary-bg-select-2: hsla(134, 61%, 75%, 0.767);
-  --color-primary-hover: #A5A728; /* Verde amarillento para hover */
-  --color-secondary: #34A853; /* Verde secundario */
-  --color-accent: #8BC34A; /* Verde lima para acentos */
-  --color-link: #28A745; /* Verde para enlaces */
-  --color-link-hover: #228B22; /* Verde más oscuro al hacer hover */
+  --color-primary-hover: #a5a728; /* Verde amarillento para hover */
+  --color-secondary: #34a853; /* Verde secundario */
+  --color-accent: #8bc34a; /* Verde lima para acentos */
+  --color-link: #28a745; /* Verde para enlaces */
+  --color-link-hover: #228b22; /* Verde más oscuro al hacer hover */
 
   /* Botones */
   --color-button-text: hsl(0, 0%, 100%);
@@ -71,16 +70,16 @@
 
   /* Colores primarios (verdes) */
   --color-primary: #2e2e2e; /* Verde brillante */
-  --color-primary-intense: #2E7D32; /* Verde oscuro */
+  --color-primary-intense: #2e7d32; /* Verde oscuro */
   --color-primary-bg: hsl(134, 61%, 30%);
   --color-primary-bg-select: hsla(0, 0%, 19%, 0.616);
   --color-primary-bg-select-deep: hsla(134, 61%, 25%, 0.247);
   --color-primary-bg-select-2: hsla(134, 61%, 45%, 0.767);
-  --color-primary-hover: #8BC34A; /* Verde lima para hover */
-  --color-secondary: #66BB6A; /* Verde secundario */
-  --color-accent: #A5D6A7; /* Verde pastel para acentos */
-  --color-link: #4CAF50; /* Verde para enlaces */
-  --color-link-hover: #8BC34A; /* Verde lima al hacer hover */
+  --color-primary-hover: #8bc34a; /* Verde lima para hover */
+  --color-secondary: #66bb6a; /* Verde secundario */
+  --color-accent: #a5d6a7; /* Verde pastel para acentos */
+  --color-link: #4caf50; /* Verde para enlaces */
+  --color-link-hover: #8bc34a; /* Verde lima al hacer hover */
 
   /* Botones */
   --color-button-text: hsl(0, 0%, 100%);
@@ -110,7 +109,7 @@
   --border-radius: 0.5rem;
 }
 
-  /* Para navegadores WebKit (Chrome, Safari, Edge) */
+/* Para navegadores WebKit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 20px; /* Ancho de la barra de scroll vertical */
   height: 12px; /* Altura de la barra de scroll horizontal */
@@ -126,11 +125,11 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary);  /* Color del scroll al pasar el mouse */
+  background: var(--color-primary); /* Color del scroll al pasar el mouse */
 }
 
 /* Para Firefox */
 * {
   scrollbar-width: auto; /* "auto" o "thin" */
-   background: var(--color-primary)  #f1f1f1; /* thumb y track */
+  background: var(--color-primary) #f1f1f1; /* thumb y track */
 }

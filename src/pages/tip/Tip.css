@@ -20,7 +20,7 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  height: 60vh;
+  min-height: 400px;
 }
 
 .tips-mini {
@@ -31,7 +31,7 @@
 }
 
 .tip-content {
-  flex: 1;
+  flex: 1 1 auto;
   padding: 2.5rem;
   background: color-mix(in srgb, var(--color-primary) 70%, transparent 50%);
   backdrop-filter: blur(10px);
