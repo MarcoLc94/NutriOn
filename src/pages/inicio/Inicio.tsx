@@ -151,7 +151,7 @@ const Inicio = () => {
           duration: 2,
         });
       }
-    }, 5000);
+    }, 10000);
     intervals.push(spinInterval);
 
     const handleResize = () => {
