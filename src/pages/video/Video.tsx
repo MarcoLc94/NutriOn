@@ -15,10 +15,10 @@ const Video = () => {
 
           <div className="video-wrapper">
             <MuxPlayer
-              streamType="on-demand"
-              playbackId="v69RSHhFelSm4701snP22dYz2jICy4E4FUyk02rW4gxNY"
+              playbackId=""
+              src="/videos/marketingNutrion.mp4"
               metadata={{
-                video_title: "NutriOn - Transforma tu alimentación",
+                video_title: "NutriOn - Agent Video",
                 viewer_user_id: "user-id-12345",
               }}
               primaryColor="#228B22"
